@@ -4,24 +4,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First day of wed dev</title>
+    <title>ABC college Admission Form</title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
-    <h1>Raja Muhammad Hammad Nadeem</h1>
-    <p>A results-driven Full Stack Web Developer with expertise in building responsive front-end interfaces using React.js, HTML/CSS, and robust backend solutions using Node.js, Express.js, and MongoDB. Passionate about creating dynamic web applications
-        and delivering optimized, user-friendly digital solutions.
+    <header>
+        <h1 class="h1">ABC college Admission Form</h1>
+        <p class="plain">Please fill out the form to apply for admission</p>
+    </header>
+    <fieldset class="fieldset1">
+        <legend> Personal information</legend>
+        <form action="#">
+            <label for="Full Name">Full Name</label>
+            <input type="name" name="name" id="name" placeholder="Enter Full Name"><br><br>
+            <label for="Email">Email</label>
+            <input type="Email" name="Email" id="Email" placeholder="Email" requried><br><br>
+            <label for="Password">Password</label>
+            <input type="Password" name="Password" id="Password" placeholder="Password"><br><br>
+            <label for="Date">Date of Birth</label>
+            <input type="date" name="date" id="date"><br><br>
+            <label for="gender">Gender:</label><br>
+            <label for="gender"><input type="radio" name="gender">Male</label><br>
+            <label for="gender"><input type="radio" name="gender">Female</label><br><br>
+        </form>
+    </fieldset><br><br>
 
-    </p>
+    <fieldset class="fieldset2">
+        <legend>Courses Selection</legend>
+        <label for="Choose Your Course">Choose Your Course</label>
+        <select name="Courses" id="">
+            <option value="Select">--select--</option>
+            <option value="Bio">Bio</option>
+            <option value="Chemistry">Chemistry</option>
+            <option value="CS">CS</option>
 
-    <h1>Hobbies</h1>
-    <ol>
-        <li>Reading</li>
-        <li>Travelling</li>
-        <li>Coding</li>
-    </ol>
-    <img src="WhatsApp Image 2025-07-30 at 12.19.44_1be85dc8.jpg" alt="" width="500">
-    <a href="google.com">Google</a>
+        </select>
+        <br><br>
+        <label for="Preferred">Preferred:</label><br>
+        <label for="Preferred"><input type="radio" name="Preferred">Online</label><br>
+        <label for="Preferred"><input type="radio" name="Preferred">On-Campus</label><br><br>
+    </fieldset><br><br>
+    <fieldset class="fieldset3">
+        <legend>Additional Information</legend>
+        <label for="UpLoad Your Photo ">UpLoad Your Photo</label>
+        <input type="file" name="" id=""><br><br>
+        <label for="Message ">Message</label>
+        <br><br>
+        <textarea name="Message" id="Message" cols="50" rows="5" placeholder="Write SomeThing about Your Self"></textarea>
+
+    </fieldset><br><br>
+    <input type="Submit" class="btn" value="Submit Application"><br><br>
+    <footer>&copy; 2025 ABC College.All rights Reserved</footer>
+
+
 </body>
 
 </html>
